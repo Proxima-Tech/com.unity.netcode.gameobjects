@@ -129,7 +129,9 @@ namespace Unity.Netcode.Editor
             // Since this is also invoked when a NetworkObject component is removed
             // from a GameObject, we go ahead and check for a NetworkObject when
             // this custom editor is destroyed.
-            NetworkBehaviourEditor.CheckForNetworkObject(m_GameObject, true);
+            //[START DIVERGENCE - 2022/08/07] - Delete NetworkBehaviourEditor
+            // NetworkBehaviourEditor.CheckForNetworkObject(m_GameObject, true);
+            //[END DIVERGENCE]
         }
     }
 }
