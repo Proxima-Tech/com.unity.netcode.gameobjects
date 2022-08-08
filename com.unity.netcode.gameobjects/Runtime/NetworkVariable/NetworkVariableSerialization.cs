@@ -1,7 +1,10 @@
 using System;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using Unity.Collections;
 using UnityEngine;
+
+[assembly: InternalsVisibleTo("Systems.Multiplayer.Runtime")]
 
 namespace Unity.Netcode
 {
