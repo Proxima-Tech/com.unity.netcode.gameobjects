@@ -915,7 +915,7 @@ namespace Unity.Netcode
             if (NetworkMetrics == null)
             {
 #if MULTIPLAYER_TOOLS
-                NetworkMetrics = new NetworkMetrics();
+                NetworkMetrics = new NullNetworkMetrics();
 #else
                 NetworkMetrics = new NullNetworkMetrics();
 #endif
